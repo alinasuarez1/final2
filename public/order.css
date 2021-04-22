@@ -47,8 +47,8 @@ h1{
   position: center;
 text-align: center;
 vertical-align: middle;
-line-height: 200px;  
     margin-bottom: 0;
+    padding-top: 50px;
 }
 
 form {
