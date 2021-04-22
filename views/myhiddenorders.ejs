@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-scale=1">
+        <title>List of Orders</title>
+        <link rel='stylesheet' href='/hiddenorders.css'>
+        
+    </head>
+    <body>
+        <ol>
+        <% for(var i=0; i<orders.length;i++){ %>
+            <li style="font-size:150%">Order</li>
+                <ul>
+                    <li>
+                        <b>Name: </b>
+                        <%= orders[i].name %>
+                    </li>
+                    <li>
+                        <b>Email: </b> <%= orders[i].email %>
+                    </li>
+                    <li>
+                        <b>Phone Number: </b><%= orders[i].number %>
+                    </li>
+                    <li>
+                        <b>Date Ordered: </b><%= orders[i].date %>
+                    </li>
+                    <li>
+                        <b>Delivery Date: </b><%= orders[i].ddate %>
+                    </li>
+                    <li>
+                        <b>Payment Type: </b><%= orders[i].payment %>
+                    </li>
+                    <li>
+                        <b>Chicken Style: </b><%= orders[i].style %>
+                    </li>
+                    <li>
+                        <b>Delivery Time: </b><%= orders[i].time %>
+                    </li>
+                    <li>
+                        <b>Method: </b><%= orders[i].method %>
+                    </li>
+            </ul>
+            <br>
+
+            <% } %>
+        </ol>
+    </body>
+</html>

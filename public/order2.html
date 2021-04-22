@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Final Project</title>
+        <link rel="stylesheet" href="order.css">
+    </head>
+    <body style="margin:0px; margin-top:0px;">
+      
+        <ul class = 'navbar'>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order2.html">Order</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="ourstory.html">Our Story</a></li>
+        <li><a href="contact.html">Get in Touch</a></li>
+
+        </ul>
+        
+  <h1>
+        ORDER FORM
+        </h1>
+<form id="form" action="/orders" method="POST">
+    <input type="text" id="userInput" name="name" placeholder="Full name"/>
+    <br>
+          <input type="text" name="email" placeholder="Email">
+    <br>
+          <input type="text" name="number" placeholder="Phone number">
+    <br>
+          <input type="text" name="date" placeholder="Today's date">
+    <br>
+          <input type="text" name="ddate" placeholder="Delivery date">
+    <br>
+ 
+<select name="payment">
+            <option value="payment" disabled selected>Method of Payment</option>
+            <option value="cash">Cash</option>
+            <option value="venmo">Venmo</option>
+            <option value="zell">Zell</option>
+            <option value="cashapp">CashApp</option>
+
+          </select>
+    <br>
+          <select name="style">
+            <option value="style" disabled selected>Chicken Style</option>
+            <option value="Classic Salt and Pepper">Classic Salt and Pepper</option>
+            <option value="Italian Herb">Italian Herb</option>
+            <option value="Garlic Crunch">Garlic Crunch</option>
+            <option value="Spicy Mamma">Spicy Mamma</option>
+
+          </select>
+    <br>
+          <select name="time">
+            <option value="time" disabled selected>Time of Delivery</option>
+            <option value="12">12:00pm</option>
+            <option value="1">1:00pm</option>
+            <option value="3">3:00pm</option>
+            <option value="6">6:00pm</option>
+            <option value="7">7:00pm</option>
+            <option value="8">8:00pm</option>
+            <option value="9">9:00pm</option>
+            <option value="10">10:00pm</option>
+          </select>
+    <br>
+        <select name="method">
+            <option value="method" disabled selected>Delivery Method</option>
+            <option value="Delivery">Delivery</option>
+            <option value="Pick Up">Pick Up</option>
+
+          </select>
+    <br>
+
+            <button href="/orderconfirmation.html" class="button" type="submit">Submit</button>
+
+        </form>
+        
+</body>
+</html>
+   
